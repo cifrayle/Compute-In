@@ -153,6 +153,16 @@ namespace Compute_In.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_expense_46 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-expense-46", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_home_32__gray_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-home-32 (gray)", resourceCulture);

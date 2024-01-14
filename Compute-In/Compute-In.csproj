@@ -46,23 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\BudgetPlannerPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\BudgetPlannerPage.Designer.cs">
-      <DependentUpon>BudgetPlannerPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DebtCounterPage.cs">
+    <Compile Include="Forms\DebtCounter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DebtCounterPage.Designer.cs">
-      <DependentUpon>DebtCounterPage.cs</DependentUpon>
+    <Compile Include="Forms\DebtCounter.Designer.cs">
+      <DependentUpon>DebtCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExpenseTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpenseTracker.Designer.cs">
+      <DependentUpon>ExpenseTracker.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HomeDashboard.cs">
       <SubType>Form</SubType>
@@ -84,14 +84,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\BudgetPlannerPage.resx">
-      <DependentUpon>BudgetPlannerPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\DebtCounterPage.resx">
-      <DependentUpon>DebtCounterPage.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DebtCounter.resx">
+      <DependentUpon>DebtCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpenseTracker.resx">
+      <DependentUpon>ExpenseTracker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HomeDashboard.resx">
       <DependentUpon>HomeDashboard.cs</DependentUpon>
@@ -166,6 +166,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\416370168_1048614279750598_1280637082707728801_n__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expense-46.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
