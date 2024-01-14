@@ -41,8 +41,8 @@ namespace Compute_In
             if (adminUsername == "admin" && adminPassword == "adminWOW")
             {
                 this.Hide();
-                HomePage home = new HomePage();
-                home.ShowDialog();
+                SplashScreen splashScreen = new SplashScreen();
+                splashScreen.Show();
             }// this line won't display anything if the user entered an empty text.
             else if (adminUsername == "" && adminPassword == "")
             {

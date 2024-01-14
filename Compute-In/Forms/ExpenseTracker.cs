@@ -19,6 +19,7 @@ namespace Compute_In.Forms
 
         private void btn_Calculator_Click(object sender, EventArgs e)
         {
+            // will show the calculator app
             Calculator calc = new Calculator();
             calc.Show();
         }
@@ -65,6 +66,24 @@ namespace Compute_In.Forms
                 // Inform the user that no rows are selected
                 MessageBox.Show("No rows selected.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btn_ClearRows_Click(object sender, EventArgs e)
+        {
+            // Display a confirmation message box
+            DialogResult result = MessageBox.Show("Are you sure you want to clear all rows?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Clear all rows from the DataGridView
+                dataGridView1.Rows.Clear();
+
+                // If using a DataTable as the data source, you can clear the DataTable as well
+                // ((DataTable)dataGridView1.DataSource).Clear();
+
+                // Or if you're using a different data source, adjust accordingly
+            }
+            // If the user clicked "No," do nothing
         }
     }
 }

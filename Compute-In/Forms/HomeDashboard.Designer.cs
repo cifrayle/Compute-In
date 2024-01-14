@@ -59,7 +59,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Compute_In.Properties.Resources.imageedit_2_4328054504;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(727, 423);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

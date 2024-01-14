@@ -50,5 +50,23 @@ namespace Compute_In.Forms
                 MessageBox.Show("No rows selected.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Display a confirmation message box
+            DialogResult result = MessageBox.Show("Are you sure you want to clear all rows?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Clear all rows from the DataGridView
+                dataGridView2.Rows.Clear();
+
+                // If using a DataTable as the data source, you can clear the DataTable as well
+                // ((DataTable)dataGridView1.DataSource).Clear();
+
+                // Or if you're using a different data source, adjust accordingly
+            }
+            // If the user clicked "No," do nothing
+        }
     }
 }

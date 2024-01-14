@@ -193,6 +193,16 @@ namespace Compute_In.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_loading {
+            get {
+                object obj = ResourceManager.GetObject("icons8_loading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_logout_46 {
             get {
                 object obj = ResourceManager.GetObject("icons8-logout-46", resourceCulture);
@@ -206,6 +216,16 @@ namespace Compute_In.Properties {
         internal static System.Drawing.Bitmap imageedit_2_4328054504 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_2_4328054504", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinegiftools {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinegiftools", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
