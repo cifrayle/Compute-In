@@ -57,11 +57,11 @@ namespace Compute_In.Forms
         private void btn_debtCounter_Click(object sender, EventArgs e)
         {
             //>> Responsive side panel
-            sidePanel.Height = btn_debtCounter.Height;
-            sidePanel.Top = btn_debtCounter.Top;
+            sidePanel.Height = btn_expenseTracker.Height;
+            sidePanel.Top = btn_expenseTracker.Top;
 
             //>> loads debtCounterPage
-            loadForm(new DebtCounterPage());
+            loadForm(new ExpenseTracker());
 
             // NOTE: Pag hindi gumana yung loadform, ito nalang:
             // Manually set up registeredForm for display in the homePanel
@@ -76,11 +76,11 @@ namespace Compute_In.Forms
         private void btn_budgetPlanner_Click(object sender, EventArgs e)
         {
             //>> Responsive side panel
-            sidePanel.Height = btn_budgetPlanner.Height;
-            sidePanel.Top = btn_budgetPlanner.Top;
+            sidePanel.Height = btn_DebtCounter.Height;
+            sidePanel.Top = btn_DebtCounter.Top;
 
             //>> loads budgetPlannerPage
-            loadForm(new BudgetPlannerPage());
+            loadForm(new DebtCounter());
 
             // NOTE: Pag hindi gumana yung loadform, ito nalang:
             // Manually set up registeredForm for display in the homePanel
