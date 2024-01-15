@@ -30,16 +30,8 @@ namespace Compute_In.Forms
                     // User clicked "Yes," proceed with removal
                     foreach (DataGridViewRow item in dataGridView2.SelectedRows)
                     {
-                        DataRowView row = item.DataBoundItem as DataRowView;
-
-                        if (row != null)
-                        {
-                            ((DataTable)dataGridView2.DataSource).Rows.Remove(row.Row);
-                        }
-                        else
-                        {
-                            dataGridView2.Rows.Remove(item);
-                        }
+                        // Remove the row from the DataGridView without affecting the data source
+                        dataGridView2.Rows.Remove(item);
                     }
                 }
                 // If the user clicked "No," do nothing

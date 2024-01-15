@@ -54,42 +54,57 @@ namespace Compute_In.Forms
             sidePanel.Top = btn_Home.Top;
         }
 
+        // this is ExpenseTracker not debtCounter
+        private ExpenseTracker expenseTrackerInstance; // Declare an instance of ExpenseTracker
+
         private void btn_debtCounter_Click(object sender, EventArgs e)
         {
-            //>> Responsive side panel
+            // Responsive side panel
             sidePanel.Height = btn_expenseTracker.Height;
             sidePanel.Top = btn_expenseTracker.Top;
 
-            //>> loads debtCounterPage
-            loadForm(new ExpenseTracker());
+            // Check if the singleton instance of ExpenseTracker is null or not.
+            // If it's null, create a new instance, configure its properties, and add it to the mainPanel.
+            if (expenseTrackerInstance == null)
+                if (expenseTrackerInstance == null)
+            {
+                // Create a new instance of ExpenseTracker
+                expenseTrackerInstance = new ExpenseTracker();
 
-            // NOTE: Pag hindi gumana yung loadform, ito nalang:
-            // Manually set up registeredForm for display in the homePanel
-            // NAME NG FORM.TopLevel = false;
-            // NAME NG FORM.Dock = DockStyle.Fill;
-            // this.mainPanel.Controls.Add(NAME NG FORM);
-            // this.mainPanel.Tag = NAME NG FORM;
-            // NAME NG FORM.BringToFront();
-            // NAME NG FORM.Show();
+                // Set properties for display within the mainPanel
+                expenseTrackerInstance.TopLevel = false;
+                expenseTrackerInstance.Dock = DockStyle.Fill;
+                this.mainPanel.Controls.Add(expenseTrackerInstance);
+                this.mainPanel.Tag = expenseTrackerInstance;
+            }
+
+            // Bring the existing or newly created ExpenseTracker instance to the front and show it.
+            expenseTrackerInstance.BringToFront();
+            expenseTrackerInstance.Show();
         }
 
+        private DebtCounter dcInstance; // declare an instance of DebtCounter
+
+        // this is debt counter not budgetPlanner
         private void btn_budgetPlanner_Click(object sender, EventArgs e)
         {
             //>> Responsive side panel
             sidePanel.Height = btn_DebtCounter.Height;
             sidePanel.Top = btn_DebtCounter.Top;
 
-            //>> loads budgetPlannerPage
-            loadForm(new DebtCounter());
-
-            // NOTE: Pag hindi gumana yung loadform, ito nalang:
-            // Manually set up registeredForm for display in the homePanel
-            // NAME NG FORM.TopLevel = false;
-            // NAME NG FORM.Dock = DockStyle.Fill;
-            // this.mainPanel.Controls.Add(NAME NG FORM);
-            // this.mainPanel.Tag = NAME NG FORM;
-            // NAME NG FORM.BringToFront();
-            // NAME NG FORM.Show();
+            // check if the instance is null or not
+            if (dcInstance == null)
+            {
+                // create a new instance if it's null
+                dcInstance = new DebtCounter();
+                dcInstance.TopLevel = false;
+                dcInstance.Dock = DockStyle.Fill;
+                this.mainPanel.Controls.Add(dcInstance);
+                this.mainPanel.Tag = dcInstance;
+            }
+            // Bring the existing or newly created DebtCounter instance to the front and show it.
+            dcInstance.BringToFront();
+            dcInstance.Show();
         }
 
         private void btn_Logout_Click(object sender, EventArgs e)
