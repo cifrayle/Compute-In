@@ -160,6 +160,7 @@
             this.btn_Calculator.Size = new System.Drawing.Size(43, 42);
             this.btn_Calculator.TabIndex = 16;
             this.btn_Calculator.UseVisualStyleBackColor = true;
+            this.btn_Calculator.Click += new System.EventHandler(this.btn_Calculator_Click);
             // 
             // button1
             // 

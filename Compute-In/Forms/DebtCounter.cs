@@ -50,7 +50,12 @@ namespace Compute_In.Forms
                 MessageBox.Show("No rows selected.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
+        private void btn_Calculator_Click(object sender, EventArgs e)
+        {
+            // will show the calculator app
+            Calculator calc = new Calculator();
+            calc.Show();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             // Display a confirmation message box
