@@ -17,6 +17,7 @@ namespace Compute_In
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Calculator());
             Application.Run(new LogInForm());
         }
     }
